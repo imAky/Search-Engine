@@ -1,6 +1,5 @@
 import './globals.css';
 import Footer from '@/components/Footer';
-import Head from 'next/head';
 
 export const metadata = {
   title: 'Google Clone',
@@ -11,10 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-     <Head>
+     <head>
         {/* Add the meta tag for Cryptomus verification */}
-       <meta name="cryptomus" content="86dbc56d" />
-      </Head>
+      <meta name="cryptomus" content="86dbc56d" />
+      </head>
       <body className='relative min-h-screen'>
         {children}
         <Footer />
